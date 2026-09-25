@@ -1,0 +1,109 @@
+{
+  "vertex-video": {
+    "api_key": "",
+    "location": "global",
+    "proxy": "",
+    "models": [
+      "veo-3.1-generate-preview",
+      "veo-3.1-fast-generate-preview"
+    ]
+  },
+  "vertex-chat": {
+    "api_key": "",
+    "location": "global",
+    "proxy": "",
+    "models": [
+      "gemini-2.5-pro",
+      "gemini-2.5-flash",
+      "gemini-2.5-flash-lite",
+      "gemini-2.0-flash",
+      "gemini-2.5-flash-image",
+      "gemini-2.5-flash-image-preview",
+      "gemini-3-pro-image-preview"
+    ]
+  },
+  "lite-llm-chat": {
+    "api_key": "",
+    "base_url": "",
+    "proxy": "",
+    "models": [
+      "gpt-5",
+      "gpt-5-mini",
+      "gpt-4.5-preview",
+      "gpt-4.1",
+      "gpt-4.1-mini",
+      "gpt-4.1-nano",
+      "gpt-4o",
+      "o4-mini",
+      "o3-pro-2025-06-10",
+      "o3",
+      "o1",
+      "claude-opus-4-20250514",
+      "claude-sonnet-4-20250514",
+      "claude-3-7-sonnet-20250219",
+      "qwen-turbo-latest",
+      "qwen-plus-latest",
+      "qwen-max",
+      "qwq-32b",
+      "qwq-plus",
+      "deepseek-reasoner",
+      "deepseek-chat",
+      "grok-4-0709",
+      "grok-3",
+      "grok-3-mini"
+    ]
+  },
+  "openai-chat": {
+    "api_key": "",
+    "base_url": "",
+    "proxy": "",
+    "models": [
+      {
+        "model_name": "hunyuan-turbos-20250604",
+        "proxy": "",
+        "api_key": "",
+        "base_url": ""
+      }
+    ]
+  },
+  "google-chat": {
+    "api_key": "",
+    "base_url": "",
+    "proxy": "",
+    "models": [
+      "gemini-2.5-flash",
+      "gemini-2.0-flash",
+      "gemini-1.5-pro"
+    ]
+  },
+  "openai-image-generate": {
+    "api_key": "",
+    "base_url": "",
+    "proxy": "",
+    "models": [
+      "gpt-image-1",
+      "dall-e-3"
+    ]
+  },
+  "flux-image-generate": {
+    "api_key": "",
+    "base_url": "",
+    "proxy": "",
+    "models": [
+      "flux"
+    ]
+  },
+  "midjourney-image": {
+    "api_key": "",
+    "base_url": "",
+    "proxy": "",
+    "models": [
+      "midjourney-v 7",
+      "midjourney-niji 6"
+    ]
+  },
+  "imgbb": {
+    "api_key": "",
+    "base_url": ""
+  }
+}

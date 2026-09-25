@@ -1,0 +1,51 @@
+基于第一章内容，生成第二章三条分支 A/B/C。
+
+必须遵守以下规则：
+路线包裹标记只允许使用 @route_start X 和 @route_end X
+禁止输出 @end_route
+第二章只使用 @choice normal，禁止 @choice route
+每条路线只允许一个 CG，且只能出现当前路线女主角
+路线A使用 @cg cg_ch2_a "标题"
+路线B使用 @cg cg_ch2_b "标题"
+路线C使用 @cg cg_ch2_c "标题"
+角色绑定必须严格一致：
+A={{CHARACTER_A}}
+B={{CHARACTER_B}}
+C={{CHARACTER_C}}
+
+叙事要求：
+每条路线开场先有场景描写，再给 2 到 3 个普通选项
+选项只影响当前路线女主角好感
+中段插入一个重要普通选项，2 个选项即可
+每个选项后可以给出对应 @feedback n 「即时反馈」
+无论选项如何，路线都走向攻略成功
+情感高点必须使用 @effect {{PREFERRED_EFFECT}} start 开启，并在情绪回落、转场或本路线 @end_chapter 前用 @effect stop 关闭
+禁止只写 @effect {{PREFERRED_EFFECT}}
+台词强烈时可使用 @shake
+每条路线用 @end_chapter 结束
+
+输出格式必须严格为：
+@route_start A
+=== 路线A: {{CHARACTER_A}} ===
+@chapter 第二章：与{{CHARACTER_A}}相关的标题
+仅{{CHARACTER_A}}出场的完整第二章内容，选项块全部使用 @choice normal
+@end_chapter
+@route_end A
+
+@route_start B
+=== 路线B: {{CHARACTER_B}} ===
+@chapter 第二章：与{{CHARACTER_B}}相关的标题
+仅{{CHARACTER_B}}出场的完整第二章内容，选项块全部使用 @choice normal
+@end_chapter
+@route_end B
+
+@route_start C
+=== 路线C: {{CHARACTER_C}} ===
+@chapter 第二章：与{{CHARACTER_C}}相关的标题
+仅{{CHARACTER_C}}出场的完整第二章内容，选项块全部使用 @choice normal
+@end_chapter
+@route_end C
+
+第一章剧本如下：
+{{CHAPTER1_SCRIPT}}
+

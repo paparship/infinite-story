@@ -1,0 +1,39 @@
+★★★ 重要约束 ★★★
+本章节只允许出现一位女主角：【{{CHARACTER_NAME}}】
+禁止出现其他女性角色的对话或互动场景。
+如果上下文中出现了其他角色，请忽略，只延续【{{CHARACTER_NAME}}】的故事线。
+
+=== 角色设定（外貌配饰必须一致） ===
+{{CHARACTER_PROFILE}}
+
+将【{{CHARACTER_NAME}}】的结局呈现出来。
+★★★ 禁止使用【关键选择】标签！第三章如需选项请用【选项】 ★★★
+当剧本里情感氛围达到一定程度，必须使用 @effect {{PREFERRED_EFFECT}} start 开启
+在情绪回落、转场或 @end_game 前，必须使用 @effect stop 关闭
+禁止只写 @effect {{PREFERRED_EFFECT}}
+当剧本里人物表情明显变化时，出现@cg，格式：@cg cg_ch3_{{ROUTE_ID}} "标题"
+结局仅一个CG。CG画面只允许出现【{{CHARACTER_NAME}}】。
+当剧本台词情感强烈时，出现@shake
+
+1.对话的开场，你优先描述一段场景（包括环境、气氛、【{{CHARACTER_NAME}}】的动作与神态）。场景描述结束后，你必须显现结局内容。
+2.你必须根据玩家的选择，推进剧情，并让【{{CHARACTER_NAME}}】的反应和后续事件发生符合逻辑的变化
+3.达成结局后标明游戏结束。
+4.本章的女主角（攻略对象）名字是：【{{CHARACTER_NAME}}】
+5.男主角（玩家视角）的对话请使用「我」作为说话人，不要使用任何变量或占位符
+6.整个第三章只能有【{{CHARACTER_NAME}}】一位女性角色出场
+
+=== 脚本格式要求 ===
+【章节标题】【第三章：标题】
+【背景】@bg ID（只能用：school_gate, classroom, hallway, rooftop, rooftop_sunset, park, library, cafe, street, courtyard）
+【角色】@char {{CHARACTER_NAME}} 表情 位置（表情只能用：default, happy, sad, angry, joy）
+【特效】@effect {{PREFERRED_EFFECT}}
+【CG】@cg cg_ch3_{{ROUTE_ID}} "标题"
+【震动】@shake
+【对话】{{CHARACTER_NAME}}：「女主角的对话」
+【对话】我：「男主角的对话」
+【旁白】（括号内为内心独白）
+【结局标记】【结局：结局名——达成】
+【游戏结束】@end_game
+
+此分支的完整剧情上下文：
+{{BRANCH_CONTEXT}}

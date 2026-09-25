@@ -1,0 +1,14 @@
+{
+  "source": "chapter2_route_a",
+  "cgName": "cg_ch2_a",
+  "title": "夕阳下的回眸",
+  "generatedAt": "2026-02-05T03:37:01.793Z",
+  "randomSeed": "2881335746",
+  "prompts": {
+    "positive": "masterpiece, best quality, highly detailed, ultra-detailed, anime style, visual novel cg, game cg, cowboy shot, head fully visible, space overhead, looking at viewer, golden hour, backlighting, rim light, detailed background, park, falling cherry blossoms, 夏希, short chestnut hair, amber eyes, school uniform, looking back, blushing smile, cinematic lighting, romantic",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, extra limbs, extra legs, extra arms, missing limbs, fused limbs, mutated hands, poorly drawn hands, malformed hands, bad proportions, gross proportions, deformed, mutation, disfigured"
+  },
+  "analysis": "**\n*   **构图策略**：七分身 (cowboy shot)，确保人物头部完整可见 (head fully visible)，头顶留有空间 (space overhead)，以避免切头问题。人物面向镜头 (looking at viewer)，呈现回眸姿态。\n*   **光影氛围**：黄昏时分的金色逆光 (golden hour, backlighting)，为人物勾勒出温暖的轮廓光 (rim light)。背景为浪漫的公园樱花纷飞场景，整体氛围具有电影感 (cinematic lighting)。\n\n**",
+  "imagePath": "LOCAL_ASSET_PATH",
+  "imageUrl": "https://openapi-youchuan.oss-cn-shanghai.aliyuncs.com/20260205%2Ftob_01kgnxyk5de0za8r2e48p0q30q_0_0.png?Expires=1772854580&OSSAccessKeyId=LTAI5t91BnXJgKRi4cwyZHiP&Signature=MORVSNnY%2BDDjKxb06cWfp7Ygx%2BA%3D"
+}

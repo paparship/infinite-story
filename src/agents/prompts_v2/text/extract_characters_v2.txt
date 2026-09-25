@@ -1,0 +1,58 @@
+从剧本中提取世界观和三位女性角色的详细描述。
+
+提取要求
+必须提取三个角色
+从剧本的对话和旁白中识别三个女性角色
+若角色信息不完整，基于角色类型做合理补充
+每个角色都必须先定义颜色，再定义外观和配饰细节
+必须明确发色与发型（发色写具体颜色词，发型写明确风格）
+
+脚本信号兼容要求
+剧本可能使用 @chapter @choice @feedback 等指令
+这些指令只用于结构定位，不要原样抄入角色描述正文
+
+配饰字段要求
+必须使用英文标签
+眼部（颜色描述即可，如 crimson, emerald, sapphire）
+头部 hair ribbon, hairpin, headband, hat, none
+颈部 scarf, necklace, ribbon tie, none
+其他 wristband, armband, earrings, none
+
+输出格式必须严格如下，只允许使用 @ 指令
+@worldview 时代、地点、学校、季节、风格
+
+@character A "第一个角色名"
+@color_profile 发色（具体颜色词）、瞳色、肤色、唇色、主代表色
+@appearance 年龄、发型（明确风格）、眼睛、身材
+@outfit school uniform, white shirt, navy blazer, pleated skirt
+@outfit_color 上装颜色、下装颜色、袜子颜色、鞋子颜色
+@accessories red hair ribbon, none, none, none
+@accessories_color 眼部配饰颜色、头部配饰颜色、颈部配饰颜色、其他配饰颜色
+@personality 类型、特点、说话方式
+@signature_color 主色调
+
+@character B "第二个角色名"
+@color_profile 发色（具体颜色词）、瞳色、肤色、唇色、主代表色
+@appearance 年龄、发型（明确风格）、眼睛、身材
+@outfit 英文标签
+@outfit_color 上装颜色、下装颜色、袜子颜色、鞋子颜色
+@accessories 英文标签
+@accessories_color 眼部配饰颜色、头部配饰颜色、颈部配饰颜色、其他配饰颜色
+@personality 类型、特点、说话方式
+@signature_color 主色调
+
+@character C "第三个角色名"
+@color_profile 发色（具体颜色词）、瞳色、肤色、唇色、主代表色
+@appearance 年龄、发型（明确风格）、眼睛、身材
+@outfit 英文标签
+@outfit_color 上装颜色、下装颜色、袜子颜色、鞋子颜色
+@accessories 英文标签
+@accessories_color 眼部配饰颜色、头部配饰颜色、颈部配饰颜色、其他配饰颜色
+@personality 类型、特点、说话方式
+@signature_color 主色调
+
+每个角色都必须有完整的颜色定义、外貌、服装、服装颜色、配饰、配饰颜色、性格、代表色
+
+剧本
+{{SCRIPT_CONTENT}}
+

@@ -1,0 +1,111 @@
+# NanoBanana CG 生成提示词模板
+
+Role: Galgame 资深美术总监 & NanoBanana (Stable Diffusion) 提示词专家
+
+任务目标：
+请根据我提供的【剧情文本】和【角色设定】，转化为适用于 NanoBanana (基于 SDXL/Anime 模型) 的 Tag 格式提示词。
+
+## 核心铁律 (CRITICAL RULES) - 针对 NanoBanana 优化
+
+1. **标签格式 (Tag Format)**：
+   * **严禁**使用长句。必须使用英文单词或短语，用逗号 `,` 分隔。
+   * **必须**使用 Danbooru 风格标签（例如：用 `school uniform` 而不是 `wearing a uniform for school`）。
+
+2. **构图绝对完整性 (Anti-Cropping Strategy)**：
+   * NanoBanana 容易切头，因此必须在提示词前段强制加入：`cowboy shot` (七分身) 或 `knee up` (膝盖以上)。
+   * **必须**包含：`head fully visible` (头部完整), `space above head` (头顶留白)。
+   * **禁止**使用 `portrait` (肖像) 或单纯的 `upper body` (除非剧情需要特写)，否则极大概率切头。
+
+3. **场景与氛围 (Scene & Vibe)**：
+   * CG 需要故事感，必须包含 `cinematic lighting` (电影光效), `highly detailed background` (高细节背景)。
+   * 根据剧情添加 `depth of field` (景深) 或 `wide angle` (广角) 来增强空间感。
+
+4. **角色名一致性 (Name Consistency)**：
+   * 角色名必须保持输入中的原文（中文/原拼写），禁止翻译、音译或替换。
+
+## 思考步骤 (CoT)
+
+在输出 Tag 之前，请先进行【画面设计分析】：
+
+1. **构图 (Composition)**：为了不切头，选择 Cowboy shot 或 Knee up。
+2. **视角 (Angle)**：选择 `from side` (侧视), `from below` (仰视), `from above` (俯视) 等。
+3. **光影 (Lighting)**：选择 `backlighting` (逆光), `volumetric lighting` (体积光), `soft lighting` (柔光) 等。
+4. **Tag 转化**：将剧情里的动作和表情转化为准确的 Danbooru 标签。
+
+## 输出格式
+
+请严格按照以下格式回复：
+
+**【画面设计分析】**
+* **构图策略**：(例如：七分身，广角，确保人物完全在画面内)
+* **光影氛围**：(例如：黄昏逆光，丁达尔效应)
+
+**【Positive Prompt】**
+masterpiece, best quality, [构图标签], [视角标签], [光影标签], [场景标签], [角色外观标签], [动作表情标签], [氛围标签]
+
+## ★ 长度限制 (CRITICAL) ★
+Positive Prompt 总长度必须 ≤ 350 字符！各部分限制：
+- 构图+视角：3-4 个标签
+- 光影：2-3 个标签
+- 场景：2-3 个标签
+- 角色外观：姓名 + 3-4 个关键特征
+- 服装：1-2 个概括词（如 school uniform），不要列举每个单品
+- 动作表情：2-3 个核心标签
+- 氛围：1-2 个标签，禁止列举颜色
+
+**【Negative Prompt】**
+lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, extra limbs, extra legs, extra arms, missing limbs, fused limbs, mutated hands, poorly drawn hands, malformed hands, bad proportions, gross proportions, deformed, mutation, disfigured
+
+---
+
+## 输入数据
+
+**【剧情文本/场景描述】**
+{{SCENE_DESCRIPTION}}
+
+**【角色设定】**
+{{CHARACTER_DESCRIPTION}}
+
+---
+
+## 参数说明
+
+### NanoBanana 推荐参数:
+- Steps: 28-35
+- CFG Scale: 7-9
+- Sampler: DPM++ 2M Karras 或 Euler a
+- Size: 832x1216 (竖版 CG) 或 1216x832 (横版 CG)
+- Clip Skip: 2
+
+### 质量标签 (固定前缀):
+masterpiece, best quality, highly detailed, ultra-detailed, anime style, visual novel cg, game cg
+
+### 构图标签选择:
+- cowboy shot: 七分身（膝盖以上）- 推荐
+- knee up: 膝盖以上 - 推荐
+- full body: 全身（需要更大画布）
+- upper body: 上半身（慎用，容易切头）
+
+### 视角标签:
+- from front: 正面
+- from side: 侧面
+- from below: 仰视
+- from above: 俯视
+- dutch angle: 斜角
+
+### 光影标签:
+- backlighting: 逆光
+- rim light: 轮廓光
+- volumetric lighting: 体积光
+- soft lighting: 柔光
+- dramatic lighting: 戏剧光
+- golden hour: 黄金时段
+- dappled sunlight: 斑驳阳光
+
+### 氛围标签:
+- cinematic: 电影感
+- atmospheric: 氛围感
+- romantic: 浪漫
+- melancholy: 忧郁
+- nostalgic: 怀旧
+- dynamic: 动感

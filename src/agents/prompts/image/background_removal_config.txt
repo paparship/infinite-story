@@ -1,0 +1,112 @@
+# 抠图配置
+# Background Removal Configuration
+# =================================
+
+## 抠图目标 (Goal)
+
+移除图像背景，保留角色主体，输出透明 PNG
+
+## 处理流程 (Processing Steps)
+
+1. 输入: 白底立绘/表情图/头像
+2. 检测前景主体（角色）
+3. 生成蒙版（mask）
+4. 移除背景
+5. 输出: 透明背景 PNG
+
+## 工具选项 (Tool Options)
+
+### 本地工具
+1. **rembg** (推荐)
+   - GitHub: https://github.com/danielgatis/rembg
+   - 安装: `pip install rembg`
+   - 使用: `rembg i input.png output.png`
+
+2. **backgroundremover**
+   - 安装: `pip install backgroundremover`
+   - 使用: `backgroundremover -i input.png -o output.png`
+
+### 在线服务/API
+1. **remove.bg**
+   - API: https://www.remove.bg/api
+   - 免费额度: 每月 50 张
+   - 质量: 高
+
+2. **PhotoRoom API**
+   - 质量: 高
+   - 支持批量
+
+3. **Clipdrop API**
+   - 质量: 高
+
+## 配置参数 (Configuration)
+
+```json
+{
+  "tool": "rembg",
+  "model": "u2net",
+  "alpha_matting": true,
+  "alpha_matting_foreground_threshold": 240,
+  "alpha_matting_background_threshold": 10,
+  "post_process_mask": true
+}
+```
+
+## 输入输出 (Input/Output)
+
+### 输入
+- 格式: PNG, JPG, WEBP
+- 背景: 纯白或接近白色
+- 建议: 由 Midjourney/Nanobanana 生成的白底图
+
+### 输出
+- 格式: PNG (RGBA)
+- 背景: 透明
+- 保留: 角色边缘细节（头发、衣物边缘等）
+
+## 质量检查 (Quality Check)
+
+抠图后检查以下问题:
+- [ ] 边缘是否干净（无白边残留）
+- [ ] 细节是否保留（头发丝、配饰）
+- [ ] 半透明区域是否正确处理
+- [ ] 整体轮廓是否完整
+
+## 批量处理命令 (Batch Processing)
+
+### 使用 rembg 批量处理
+```bash
+# 处理单个文件
+rembg i input.png output.png
+
+# 处理整个文件夹
+rembg p input_folder output_folder
+
+# 使用特定模型
+rembg i -m u2net_human_seg input.png output.png
+```
+
+### Python 脚本示例
+```python
+from rembg import remove
+from PIL import Image
+
+def remove_background(input_path: str, output_path: str):
+    input_image = Image.open(input_path)
+    output_image = remove(input_image)
+    output_image.save(output_path)
+```
+
+## 后处理建议 (Post-processing)
+
+1. **去除白边**
+   - 对边缘进行轻微侵蚀
+   - 或使用 alpha matting 改善边缘
+
+2. **优化边缘**
+   - 对 alpha 通道进行轻微模糊
+   - 避免锯齿边缘
+
+3. **压缩优化**
+   - 使用 pngquant 或 optipng 压缩
+   - 保持透明度的同时减小文件大小

@@ -1,0 +1,14 @@
+{
+  "source": "chapter2_route_b",
+  "cgName": "cg_ch2_b",
+  "title": "卸下防备的时刻",
+  "generatedAt": "2026-02-05T03:39:12.996Z",
+  "randomSeed": "1034542674",
+  "prompts": {
+    "positive": "masterpiece, best quality, highly detailed, ultra-detailed, anime style, visual novel cg, game cg, cowboy shot, head fully visible, space above head, from front, cinematic lighting, soft warm lighting, volumetric lighting, highly detailed background, school classroom, evening twilight, depth of field, 凛, long black hair, blue eyes, blush, school uniform, sitting, holding glasses, eyes closed, gentle smile, intimate, peaceful",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, extra limbs, extra legs, extra arms, missing limbs, fused limbs, mutated hands, poorly drawn hands, malformed hands, bad proportions, gross proportions, deformed, mutation, disfigured"
+  },
+  "analysis": "**\n*   **构图策略**：七分身 (cowboy shot)，景深 (depth of field)，确保人物头部完整且上方留白 (head fully visible, space above head)。此构图能展现凛的放松姿态及部分桌面环境，同时避免切头。\n*   **光影氛围**：室内暖色调黄昏光线与窗外深蓝暮霭形成对比。采用柔和温暖的光线 (soft warm lighting) 营造静谧感，结合体积光 (volumetric lighting) 强调茶杯的蒸汽和室内氛围，增加电影感。\n\n**",
+  "imagePath": "LOCAL_ASSET_PATH",
+  "imageUrl": "https://openapi-youchuan.oss-cn-shanghai.aliyuncs.com/20260205%2Ftob_01kgny2kc8e0zvpp5cbj6zq09f_0_0.png?Expires=1772854711&OSSAccessKeyId=LTAI5t91BnXJgKRi4cwyZHiP&Signature=42hLmUKvBjPeC3ux64iOIwV6hlM%3D"
+}

@@ -1,0 +1,77 @@
+# Midjourney 角色立绘提示词模板
+# Character Sprite Prompt Template for Midjourney
+# ================================================
+
+## 基础模板 (Base Template)
+
+game character sprite, tachi-e, knee-up shot, {{CHARACTER_APPEARANCE}}, {{CHARACTER_OUTFIT}}, simple pure white background, isolated on white, anime style, standing pose, cel shading, flat color, clear contour, clean lines, high quality, masterpiece, head fully visible, ample headroom, white space around subject
+
+--ar 2:3
+--s 100
+--niji 6
+--no lowres, bad anatomy, extra limbs, extra legs, extra arms, missing limbs, fused limbs, mutated hands, poorly drawn hands, malformed hands, extra fingers, fewer fingers, bad proportions, gross proportions, deformed, mutation, disfigured
+
+## 变量说明 (Variable Placeholders)
+
+### [WORLD_SETTING] - 世界观设定（已弃用，不再注入立绘提示词）
+角色立绘不再输入具体景观信息，避免出现非白底背景
+
+### {{CHARACTER_APPEARANCE}} - 角色外貌
+从角色描述文件的「外貌描述」部分提取，例如：
+- "18 years old, short brown hair, ponytail, slender figure, cheerful smile"
+- "18 years old, long black hair, glasses, cool expression"
+- "16 years old, petite figure, orange short hair, bright eyes"
+
+### {{CHARACTER_OUTFIT}} - 服装设定
+从角色描述文件的「服装设定」部分提取，例如：
+- "casual dress, cardigan, ribbon hair accessory"
+- "school uniform, student council armband, neat appearance"
+- "summer dress, straw hat, floral pattern"
+
+## 兼容旧格式
+
+{世界观+角色设定} 仍然可用，会被替换为完整的角色描述
+
+## 模板说明 (Template Explanation)
+
+### 核心参数:
+- game character sprite: 游戏角色立绘
+- tachi-e: 日式立绘风格（站姿）
+- knee-up shot: 膝盖以上的构图
+- simple pure white background: 纯白背景
+- isolated on white: 白底隔离
+- anime style: 动漫风格
+- standing pose: 站立姿势
+- cel shading: 赛璐珞着色
+- flat color: 平涂上色
+- clear contour: 清晰轮廓
+- clean lines: 干净线条
+- high quality, masterpiece: 高质量
+- head fully visible: 头部完整可见
+- ample headroom: 头顶留白充足
+- white space around subject: 主体周围有留白
+
+### Midjourney 参数:
+- --ar 2:3: 宽高比 2:3（竖向立绘）
+- --s 100: 风格化程度
+- --niji 6: 使用 Niji 6 模型（动漫风格）
+- --seed [随机]: 每次生成使用随机种子
+- --no [负面提示]: 排除不良元素
+
+### 负面提示 (Negative Prompts):
+避免常见的解剖错误：
+- lowres: 低分辨率
+- bad anatomy: 错误解剖
+- extra limbs/legs/arms: 多余肢体
+
+
+## 示例 (Examples)
+
+### 示例1: 青梅竹马型角色（夏树）
+game character sprite, tachi-e, knee-up shot, modern japanese high school, spring season, cherry blossoms, 17 years old girl, short brown hair with ponytail, slender athletic figure, bright cheerful smile, school uniform, navy blazer, pleated skirt, wristband, simple pure white background, isolated on white, anime style, standing pose, cel shading, flat color, clear contour, clean lines, high quality, masterpiece, head fully visible, ample headroom, white space around subject --ar 2:3 --s 100 --niji 6 --seed 21999 --no lowres
+
+### 示例2: 学姐型角色（琴音）
+game character sprite, tachi-e, knee-up shot, modern japanese high school, spring season, 18 years old girl, long black hair, silver glasses, cool elegant expression, school uniform, student council vice president armband, neat appearance, simple pure white background, isolated on white, anime style, standing pose, cel shading, flat color, clear contour, clean lines, high quality, masterpiece, head fully visible, ample headroom, white space around subject --ar 2:3 --s 100 --niji 6 --seed 21999 --no lowres
+
+### 示例3: 后辈型角色（芽衣）
+game character sprite, tachi-e, knee-up shot, modern japanese high school, spring season, 16 years old girl, petite figure, short orange hair bob cut, big curious eyes, cheerful sunny smile, school uniform, art club member, colorful hair clips, simple pure white background, isolated on white, anime style, standing pose, cel shading, flat color, clear contour, clean lines, high quality, masterpiece, head fully visible, ample headroom, white space around subject --ar 2:3 --s 100 --niji 6 --seed 21999 --no lowres

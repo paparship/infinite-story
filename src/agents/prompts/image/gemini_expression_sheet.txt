@@ -1,0 +1,67 @@
+# Gemini 3 Pro Image 表情表生成提示词模板
+# Expression Sheet Prompt Template for Gemini 3 Pro Image
+# ========================================================
+# 模型: gemini-3-pro-image-preview (Vertex AI)
+
+## 基础模板 (Base Template)
+
+生成一张以参考图1中的角色为原型的2*2的不同表情的图片。【重要：每个格子里只能有一个角色，严禁出现两个或多个人物】表情和动作相匹配。第一张图，角色睁着眼睛微笑，开心的表情。第二张图，角色有些生气的表情，第三张图，角色悲伤的图，第四张图，角色眯起眼睛大笑，非常开心的表情。每张图都是相同的1：1大小，生成与参考图1角色大小一致的膝盖以上的角色图像方法，生成正确的手和脚。禁止只生成胸部以上的表情图。【再次强调：整张图只有同一个角色的4种表情，绝对不能出现第二个人物】
+
+## 表情分解 (Expression Breakdown)
+
+### 位置1 (左上): 开心微笑 Happy Smile
+- 表情: 睁着眼睛微笑
+- 情绪: 开心、愉悦
+- 动作: 可以稍微歪头或双手合十
+
+### 位置2 (右上): 生气 Angry
+- 表情: 有些生气
+- 情绪: 愤怒、不满
+- 动作: 可以叉腰或握拳
+
+### 位置3 (左下): 悲伤 Sad
+- 表情: 悲伤
+- 情绪: 难过、伤心
+- 动作: 可以低头或捂脸
+
+### 位置4 (右下): 大笑 Laughing
+- 表情: 眯起眼睛大笑
+- 情绪: 非常开心、兴奋
+- 动作: 可以双手举起或拍手
+
+## 重要约束 (Important Constraints)
+
+1. 所有四张图必须保持角色一致性
+2. 每张图都是 1:1 正方形比例
+3. 构图必须是膝盖以上（不是胸部以上）
+4. 角色大小与参考图保持一致
+5. 手和脚的绘制必须正确
+6. 服装和配饰保持一致
+
+## 输入要求 (Input Requirements)
+
+- 参考图: 由 Midjourney 生成的角色正面立绘
+- 格式: 2*2 网格布局
+- 输出尺寸: 建议每格 512x512 或 1024x1024
+
+## 备用提示词变体 (Alternative Prompts)
+
+### 英文版本 (English Version)
+Generate a 2x2 grid of different expressions based on the character in reference image 1. Expressions match the poses. Top-left: character smiling with eyes open, happy expression. Top-right: character with slightly angry expression. Bottom-left: character with sad expression. Bottom-right: character laughing with eyes squinted, very happy expression. Each image is the same 1:1 size, generate knee-up character images matching the size of reference image 1 character, generate correct hands and feet. Do NOT generate only chest-up expression images.
+
+### 简化版本 (Simplified Version)
+基于参考图生成2*2表情图：
+1. 开心微笑 2. 生气 3. 悲伤 4. 大笑
+要求：膝盖以上构图，1:1比例，角色大小一致
+
+## 输出格式说明 (Output Format)
+
+```
+┌─────────────┬─────────────┐
+│   开心微笑   │    生气     │
+│   (Happy)   │  (Angry)    │
+├─────────────┼─────────────┤
+│    悲伤     │    大笑     │
+│   (Sad)     │ (Laughing)  │
+└─────────────┴─────────────┘
+```

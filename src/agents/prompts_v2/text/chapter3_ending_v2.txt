@@ -1,0 +1,28 @@
+生成第三章结局，单路线单女主。
+
+角色约束：
+本章只允许一位女主角 {{CHARACTER_NAME}}
+禁止出现其他女性角色
+玩家视角台词说话人固定为 我
+
+格式约束：
+结局 CG 仅一张，格式 @cg cg_ch3_{{ROUTE_ID}} "标题"
+情感高点必须使用 @effect {{PREFERRED_EFFECT}} start 开启，并在情绪回落、转场或 @end_game 前用 @effect stop 关闭
+禁止只写 @effect {{PREFERRED_EFFECT}}
+强烈情绪场景可使用 @shake
+章节结束必须使用 @end_game
+
+叙事要求：
+开场先做场景描写，包含环境、气氛、动作神态
+重点呈现结局达成过程，结尾具备完整终结感
+如需选项，使用 @choice normal
+每个选项后可以给出对应 @feedback n 「即时反馈」
+
+禁止：禁止 NSFW
+
+角色设定如下，外貌和配饰必须保持一致：
+{{CHARACTER_PROFILE}}
+
+此分支完整上下文如下：
+{{BRANCH_CONTEXT}}
+

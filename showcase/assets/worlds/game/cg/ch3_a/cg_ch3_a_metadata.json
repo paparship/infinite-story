@@ -1,0 +1,14 @@
+{
+  "source": "chapter3_route_a",
+  "cgName": "cg_ch3_a",
+  "title": "起跑线的终结",
+  "generatedAt": "2026-02-05T03:38:09.367Z",
+  "randomSeed": "2844505535",
+  "prompts": {
+    "positive": "masterpiece, best quality, cowboy shot, head fully visible, space above head, looking at viewer, cinematic lighting, backlighting, golden hour, highly detailed background, school rooftop, cherry blossoms, 夏希, short brown hair, amber eyes, tears, blushing, school uniform, ribbon, grabbing clothes, tearful smile, tiptoes, romantic, atmospheric",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, extra limbs, extra legs, extra arms, missing limbs, fused limbs, mutated hands, poorly drawn hands, malformed hands, bad proportions, gross proportions, deformed, mutation, disfigured"
+  },
+  "analysis": "**\n*   **构图策略**：七分身 (cowboy shot)，确保头部完整 (head fully visible)，头顶留白 (space above head)，通过 `looking at viewer` 强化与主角的互动。\n*   **光影氛围**：傍晚逆光 (backlighting, golden hour)，整体电影感光效 (cinematic lighting)，营造温暖而绚烂的告白氛围。\n\n**",
+  "imagePath": "LOCAL_ASSET_PATH",
+  "imageUrl": "https://openapi-youchuan.oss-cn-shanghai.aliyuncs.com/20260205%2Ftob_01kgny0maze0zrxp6qd67ahfsy_0_0.png?Expires=1772854647&OSSAccessKeyId=LTAI5t91BnXJgKRi4cwyZHiP&Signature=9YjVIuP1cJNeMcDdlBI3E1UeVYw%3D"
+}

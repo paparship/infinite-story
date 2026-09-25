@@ -1,0 +1,14 @@
+{
+  "source": "chapter3_route_b",
+  "cgName": "cg_ch3_b",
+  "title": "夕阳下的告白",
+  "generatedAt": "2026-02-05T03:40:13.071Z",
+  "randomSeed": "934620187",
+  "prompts": {
+    "positive": "masterpiece, best quality, highly detailed, ultra-detailed, anime style, visual novel cg, game cg, cowboy shot, head fully visible, space above head, depth of field, cinematic lighting, golden hour, backlighting, highly detailed background, school rooftop, falling cherry blossoms, 凛, long black hair, blue eyes, teary eyes, windblown hair, school uniform, ribbon, blushing, shy smile, head tilt, romantic, atmospheric",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, extra limbs, extra legs, extra arms, missing limbs, fused limbs, mutated hands, poorly drawn hands, malformed hands, bad proportions, gross proportions, deformed, mutation, disfigured"
+  },
+  "analysis": "**\n*   **构图策略**：七分身 (cowboy shot)，利用广角 (wide angle) 展现天台环境，确保人物头部完整 (head fully visible)，头顶留白 (space above head)，并使用景深 (depth of field) 突出人物。\n*   **光影氛围**：黄昏 (golden hour) 的逆光 (backlighting)，营造出柔和的金色轮廓光 (rim light)，结合体积光 (volumetric lighting) 强调樱花飘落的梦幻感，整体光效电影化 (cinematic lighting)，带有浪漫和怀旧色彩。\n\n**",
+  "imagePath": "LOCAL_ASSET_PATH",
+  "imageUrl": "https://openapi-youchuan.oss-cn-shanghai.aliyuncs.com/20260205%2Ftob_01kgny4e11e0zttxva9gpxsrj3_0_0.png?Expires=1772854771&OSSAccessKeyId=LTAI5t91BnXJgKRi4cwyZHiP&Signature=8dC5ZJPmvt4KCgTR86G%2Fwsde%2FM0%3D"
+}

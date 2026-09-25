@@ -1,0 +1,14 @@
+{
+  "source": "chapter2_route_c",
+  "cgName": "cg_ch2_c",
+  "title": "指尖的温度",
+  "generatedAt": "2026-02-05T03:41:27.357Z",
+  "randomSeed": "430715117",
+  "prompts": {
+    "positive": "masterpiece, best quality, highly detailed, ultra-detailed, anime style, visual novel cg, game cg, cowboy shot, head fully visible, space above head, depth of field, cinematic lighting, volumetric lighting, soft lighting, highly detailed background, school library window, night cherry blossoms, Shiori, light brown hair, headband, green eyes, school uniform, leaning forward, pointing at book, gentle expression, atmospheric, serene",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, extra limbs, extra legs, extra arms, missing limbs, fused limbs, mutated hands, poorly drawn hands, malformed hands, bad proportions, gross proportions, deformed, mutation, disfigured"
+  },
+  "analysis": "**\n*   **构图策略**：七分身 (cowboy shot)，聚焦人物上半身、纤细的手指与摊开的书籍。通过景深 (depth of field) 突出主体，同时确保头部完整可见并留有顶部空间。\n*   **光影氛围**：夜晚图书馆窗边，窗外路灯的暖黄光晕与室内柔和昏暗的灯光交织，形成电影般的光效和体积光，营造静谧而唯美的氛围。\n\n**",
+  "imagePath": "LOCAL_ASSET_PATH",
+  "imageUrl": "https://openapi-youchuan.oss-cn-shanghai.aliyuncs.com/20260205%2Ftob_01kgny6phse0zv268284m41jvw_0_0.png?Expires=1772854845&OSSAccessKeyId=LTAI5t91BnXJgKRi4cwyZHiP&Signature=x1pJoRqKiYxotInDuX1kFBlCOUE%3D"
+}

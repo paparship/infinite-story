@@ -1,0 +1,39 @@
+{
+  "name": "galagame-agents-demo",
+  "version": "1.0.0",
+  "description": "LangGraph Agent 流程演示 - 包括分支节点、生图流程和角色立绘流水线",
+  "type": "module",
+  "scripts": {
+    "test:branching": "npx tsx ../../_tests/agents/test-branching-agent.ts",
+    "test:image": "npx tsx ../../_tests/agents/test-image-generation-agent.ts",
+    "test:sprite": "npx tsx character-sprite-agent.ts",
+    "test:pipeline": "npx tsx ../../_tests/agents/test-pipeline-step-by-step.ts",
+    "test:mj": "npx tsx ../../_tests/agents/test-midjourney-standalone.ts",
+    "test:gemini": "npx tsx ../../_tests/agents/test-gemini-api.ts",
+    "test:all": "npm run test:branching && npm run test:image && npm run test:sprite",
+    "generate-server": "npx tsx generation-server.ts",
+    "generate": "npx tsx workflow-master.ts",
+    "repair-world": "npx tsx repair-world.ts"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^3.8.1",
+    "@imgly/background-removal-node": "^1.4.5",
+    "@langchain/core": "^0.3.40",
+    "@langchain/google-genai": "^0.2.0",
+    "@langchain/google-vertexai": "^0.2.18",
+    "@langchain/langgraph": "^0.2.50",
+    "@types/sharp": "^0.31.1",
+    "axios": "^1.7.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "sharp": "^0.34.5",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.4.0"
+  }
+}

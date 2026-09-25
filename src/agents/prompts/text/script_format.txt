@@ -1,0 +1,70 @@
+===== 脚本格式规范 =====
+
+【章节标题】
+@chapter 第一章：标题名称
+或：【第一章：标题名称】
+
+【背景切换】
+@bg background_id
+★ 必须使用以下背景ID（不可自创）：
+- 校园: school_gate, classroom, hallway, rooftop, rooftop_sunset, courtyard, playground
+- 室内: club_room, library, music_room, art_room, cafe, bedroom, living_room, kitchen
+- 室外: street, park, park_bench, station, beach, shrine, sakura
+- 氛围: sunset, evening, night
+
+【角色显示】
+@char 角色名 表情 位置
+示例：@char 林夏 happy center
+★ 表情必须使用：default, happy, angry, sad, joy
+★ 位置必须使用：left, center, right
+
+【角色隐藏】
+@hide 角色名
+@clear （清除所有角色）
+
+【特效】
+@effect effect_type
+★ 必须使用以下特效：sakura, rain, snow, stars, dust, leaves, hearts, light, fireflies, petals
+停止特效：@effect stop 或 @effect clear
+
+【屏幕效果】
+@shake （震动）
+@flash （闪白）
+@fadeout / @fadein
+
+【CG显示】
+@cg cg_id "标题"
+★ CG ID 格式（不可自创）：
+- 第一章: cg_ch1
+- 第二章: cg_ch2_a, cg_ch2_b, cg_ch2_c
+- 第三章: cg_ch3_a, cg_ch3_b, cg_ch3_c
+关闭CG：@cg close
+
+【BGM】
+@bgm bgm_type
+★ 必须使用：title, calm, happy, emotional, romantic, sad, suspense, peaceful, stop
+
+【对话格式】
+角色名：「对话内容」
+示例：林夏：「早上好！」
+
+【旁白/独白】
+（括号包裹的是内心独白或旁白）
+或直接写旁白文字
+
+【普通选择】
+1. 「选项文本」（增加XX好感）
+2. 「选项文本」
+3. 「选项文本」
+
+【关键选择/路线选择】
+【关键选择】
+1. 「选项文本」
+2. 「选项文本」
+
+【章节结束】
+@end_chapter
+
+【游戏结束】
+@end_game
+或：【结局：结局名称——达成】

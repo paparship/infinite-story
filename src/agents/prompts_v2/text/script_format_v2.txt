@@ -1,0 +1,51 @@
+脚本格式规范
+
+一、章节与流程指令
+章节标题统一使用 @chapter 第X章：标题
+章节结束使用 @end_chapter
+游戏结束使用 @end_game
+
+二、场景与表现指令
+@bg 背景ID
+@char 角色名 表情 位置
+@hide 角色名
+@clear
+@effect 特效ID start
+每次开启特效后，后文必须在合适叙事节点使用 @effect stop 关闭
+禁止只写 @effect 特效ID（必须带 start/stop）
+@shake
+@cg cg_id "标题"
+
+三、文本行规则
+对话行格式 角色名：「内容」
+旁白或独白格式 （内容）
+
+四、选项块规则
+普通选项块使用 @choice normal
+示例
+@choice normal
+1. 「选项文本」
+2. 「选项文本」
+
+路线锁定选项块使用 @choice route
+示例
+@choice route
+1. 「选项文本」
+2. 「选项文本」
+
+每个choice 跟随一组反馈，选项反馈使用 @feedback
+格式 @feedback 选项编号 「即时反馈文本」
+示例
+@feedback 1 「选择第1项后的即时反馈」
+@feedback 2 「选择第2项后的即时反馈」
+@feedback 3 「选择第3项后的即时反馈」
+
+五、枚举约束
+表情只能使用 default, happy, angry, sad, joy
+位置只能使用 left, center, right
+背景只能使用 school_gate, classroom, hallway, rooftop, rooftop_sunset, park, library, cafe, street, courtyard
+特效ID 只能使用 sakura, rain, snow, stars, dust, leaves, hearts, light, fireflies, petals
+CG 行格式固定为 @cg cg_id "标题"
+禁止 NSFW 内容
+
+

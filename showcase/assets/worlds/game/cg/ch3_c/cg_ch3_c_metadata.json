@@ -1,0 +1,14 @@
+{
+  "source": "chapter3_route_c",
+  "cgName": "cg_ch3_c",
+  "title": "初恋的扉页",
+  "generatedAt": "2026-02-05T03:42:38.315Z",
+  "randomSeed": "2136101214",
+  "prompts": {
+    "positive": "masterpiece, best quality, highly detailed, ultra-detailed, anime style, visual novel cg, game cg, cowboy shot, head fully visible, space above head, from front, cinematic lighting, golden hour, rooftop, highly detailed background, falling cherry blossoms, 诗织, 1girl, windblown light brown hair, green eyes, school uniform, cardigan, tears, smile, leaning forward, reaching out hand, emotional, romantic",
+    "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, extra limbs, extra legs, extra arms, missing limbs, fused limbs, mutated hands, poorly drawn hands, malformed hands, bad proportions, gross proportions, deformed, mutation, disfigured"
+  },
+  "analysis": "**\n*   **构图策略**：七分身 (cowboy shot)，确保人物完全在画面内，头部完整可见并留有空间，重点展现诗织伸出的手和上半身的深情姿态。\n*   **光影氛围**：黄昏黄金时段的电影感逆光，将背景染成茜色，营造告白场景的绚烂、感伤与动态氛围。\n\n**",
+  "imagePath": "LOCAL_ASSET_PATH",
+  "imageUrl": "https://openapi-youchuan.oss-cn-shanghai.aliyuncs.com/20260205%2Ftob_01kgny8vvxe0zs5wmp0cxde5dq_0_0.png?Expires=1772854916&OSSAccessKeyId=LTAI5t91BnXJgKRi4cwyZHiP&Signature=OhwA5OWhy50es8cTgYE7AqhU2RE%3D"
+}

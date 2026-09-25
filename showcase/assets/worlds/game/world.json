@@ -1,0 +1,234 @@
+{
+  "uid": "game",
+  "version": "1.0.0",
+  "createdAt": "2026-02-05T03:42:38.318Z",
+  "updatedAt": "2026-02-05T03:42:38.318Z",
+  "generationParams": {
+    "language": "zh-CN"
+  },
+  "game": {
+    "title": "风信子与晚钟",
+    "description": "由 AI 自动生成的视觉小说世界",
+    "characters": [
+      {
+        "id": "char_1",
+        "name": "凛",
+        "color": "#FFB7C5",
+        "folder": "characters/凛",
+        "expressions": [
+          "default",
+          "happy",
+          "angry",
+          "sad",
+          "joy"
+        ]
+      },
+      {
+        "id": "char_2",
+        "name": "夏希",
+        "color": "#87CEEB",
+        "folder": "characters/夏希",
+        "expressions": [
+          "default",
+          "happy",
+          "angry",
+          "sad",
+          "joy"
+        ]
+      },
+      {
+        "id": "char_3",
+        "name": "诗织",
+        "color": "#DDA0DD",
+        "folder": "characters/诗织",
+        "expressions": [
+          "default",
+          "happy",
+          "angry",
+          "sad",
+          "joy"
+        ]
+      }
+    ],
+    "chapters": {
+      "common": [
+        {
+          "id": "chapter1",
+          "title": "第一章",
+          "script": "story/chapter1.txt"
+        }
+      ],
+      "routes": {
+        "char_1": [
+          {
+            "id": "chapter2_char_1",
+            "title": "第二章：凛路线",
+            "script": "story/route_a/chapter2.txt"
+          },
+          {
+            "id": "chapter3_char_1",
+            "title": "第三章：凛结局",
+            "script": "story/route_a/chapter3.txt"
+          }
+        ],
+        "char_2": [
+          {
+            "id": "chapter2_char_2",
+            "title": "第二章：夏希路线",
+            "script": "story/route_b/chapter2.txt"
+          },
+          {
+            "id": "chapter3_char_2",
+            "title": "第三章：夏希结局",
+            "script": "story/route_b/chapter3.txt"
+          }
+        ],
+        "char_3": [
+          {
+            "id": "chapter2_char_3",
+            "title": "第二章：诗织路线",
+            "script": "story/route_c/chapter2.txt"
+          },
+          {
+            "id": "chapter3_char_3",
+            "title": "第三章：诗织结局",
+            "script": "story/route_c/chapter3.txt"
+          }
+        ]
+      }
+    },
+    "endings": [
+      {
+        "id": "ending_char_1",
+        "characterId": "char_1",
+        "title": "凛结局"
+      },
+      {
+        "id": "ending_char_2",
+        "characterId": "char_2",
+        "title": "夏希结局"
+      },
+      {
+        "id": "ending_char_3",
+        "characterId": "char_3",
+        "title": "诗织结局"
+      }
+    ],
+    "cgs": [
+      {
+        "id": "cg_ch1",
+        "name": "cg_ch1",
+        "title": "书页间的侧脸",
+        "chapter": "ch1",
+        "path": "cg/ch1/cg_ch1.png"
+      },
+      {
+        "id": "cg_ch2_a",
+        "name": "cg_ch2_a",
+        "title": "夕阳下的回眸",
+        "chapter": "ch2_a",
+        "path": "cg/ch2_a/cg_ch2_a.png"
+      },
+      {
+        "id": "cg_ch2_b",
+        "name": "cg_ch2_b",
+        "title": "卸下防备的时刻",
+        "chapter": "ch2_b",
+        "path": "cg/ch2_b/cg_ch2_b.png"
+      },
+      {
+        "id": "cg_ch2_c",
+        "name": "cg_ch2_c",
+        "title": "指尖的温度",
+        "chapter": "ch2_c",
+        "path": "cg/ch2_c/cg_ch2_c.png"
+      },
+      {
+        "id": "cg_ch3_a",
+        "name": "cg_ch3_a",
+        "title": "起跑线的终结",
+        "chapter": "ch3_a",
+        "path": "cg/ch3_a/cg_ch3_a.png"
+      },
+      {
+        "id": "cg_ch3_b",
+        "name": "cg_ch3_b",
+        "title": "夕阳下的告白",
+        "chapter": "ch3_b",
+        "path": "cg/ch3_b/cg_ch3_b.png"
+      },
+      {
+        "id": "cg_ch3_c",
+        "name": "cg_ch3_c",
+        "title": "初恋的扉页",
+        "chapter": "ch3_c",
+        "path": "cg/ch3_c/cg_ch3_c.png"
+      }
+    ],
+    "backgrounds": [
+      "school_gate",
+      "classroom",
+      "hallway",
+      "club_room",
+      "rooftop_cloudy",
+      "rooftop_clear",
+      "night_room",
+      "street_morning",
+      "park"
+    ],
+    "bgmTypes": [
+      "title",
+      "calm",
+      "happy",
+      "emotional",
+      "romantic",
+      "sad"
+    ]
+  },
+  "assets": {
+    "characters": {
+      "char_1": {
+        "name": "凛",
+        "folder": "characters/凛",
+        "sprites": {
+          "default": "characters/凛/nobg/polished_sprite.png",
+          "happy": "characters/凛/nobg/expression_happy.png",
+          "angry": "characters/凛/nobg/expression_angry.png",
+          "sad": "characters/凛/nobg/expression_sad.png",
+          "joy": "characters/凛/nobg/expression_joy.png"
+        },
+        "portrait": "characters/凛/nobg/portrait.png"
+      },
+      "char_2": {
+        "name": "夏希",
+        "folder": "characters/夏希",
+        "sprites": {
+          "default": "characters/夏希/nobg/polished_sprite.png",
+          "happy": "characters/夏希/nobg/expression_happy.png",
+          "angry": "characters/夏希/nobg/expression_angry.png",
+          "sad": "characters/夏希/nobg/expression_sad.png",
+          "joy": "characters/夏希/nobg/expression_joy.png"
+        },
+        "portrait": "characters/夏希/nobg/portrait.png"
+      },
+      "char_3": {
+        "name": "诗织",
+        "folder": "characters/诗织",
+        "sprites": {
+          "default": "characters/诗织/nobg/polished_sprite.png",
+          "happy": "characters/诗织/nobg/expression_happy.png",
+          "angry": "characters/诗织/nobg/expression_angry.png",
+          "sad": "characters/诗织/nobg/expression_sad.png",
+          "joy": "characters/诗织/nobg/expression_joy.png"
+        },
+        "portrait": "characters/诗织/nobg/portrait.png"
+      }
+    }
+  },
+  "stats": {
+    "totalCharacters": 3,
+    "totalCGs": 7,
+    "totalChapters": 7,
+    "generationTime": null
+  }
+}

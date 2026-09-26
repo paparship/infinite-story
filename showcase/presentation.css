@@ -14,3 +14,13 @@ body{font-size:16px;line-height:1.7}header{font-size:13px}small{font-size:13px;l
 @media(max-width:760px){.heading p{display:block;font-size:13px}.stage{height:clamp(520px,68vh,680px)}.graphscroll{height:calc(100% - 300px)}svg{min-width:900px}.inspector{height:158px;min-height:158px;grid-template-columns:1.2fr 1fr}.inspector p{font-size:14px}.inspector code{font-size:11px}.inspector pre{font-size:12px!important}.screen>.footnote{font-size:11px}.player-status{font-size:11px}.footnote{font-size:12px}.timeline-labels{font-size:11px}}
 
 svg .node text{font-size:20px}svg .node .sub{font-size:16px}.heading p{color:#625d55}.footnote,.screen>.footnote{color:#797268}
+
+/* Stage captions share the slider column and align to each segment midpoint. */
+.transport{display:grid;grid-template-columns:auto auto minmax(0,1fr) auto;column-gap:12px;row-gap:4px;height:auto;padding:12px 18px 14px}
+.transport input[type=range]{width:100%;margin:0;align-self:center}
+.timeline-labels{grid-column:3;position:relative;height:22px;padding:0;display:block;white-space:nowrap}
+.timeline-labels span{position:absolute;transform:translateX(-50%)}
+.timeline-labels span:nth-child(1){left:5.319%}
+.timeline-labels span:nth-child(2){left:38.298%}
+.timeline-labels span:nth-child(3){left:82.979%}
+@media(max-width:760px){.transport{padding:10px 12px 12px;column-gap:8px}.transport #clock{font-size:10px}.timeline-labels{font-size:10px}}

@@ -24,3 +24,8 @@ svg .node text{font-size:20px}svg .node .sub{font-size:16px}.heading p{color:#62
 .timeline-labels span:nth-child(2){left:38.298%}
 .timeline-labels span:nth-child(3){left:82.979%}
 @media(max-width:760px){.transport{padding:10px 12px 12px;column-gap:8px}.transport #clock{font-size:10px}.timeline-labels{font-size:10px}}
+
+.timeline-labels span{color:#a39b8f;transition:color .18s ease}
+.timeline-labels span.active{color:#51402e;font-weight:600}
+.timeline-labels span::before{content:"";position:absolute;left:50%;top:-5px;width:18px;height:2px;background:transparent;transform:translateX(-50%);transition:background .18s ease}
+.timeline-labels span.active::before{background:#967651}

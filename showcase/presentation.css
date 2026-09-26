@@ -29,3 +29,12 @@ svg .node text{font-size:20px}svg .node .sub{font-size:16px}.heading p{color:#62
 .timeline-labels span.active{color:#51402e;font-weight:600}
 .timeline-labels span::before{content:"";position:absolute;left:50%;top:-5px;width:18px;height:2px;background:transparent;transform:translateX(-50%);transition:background .18s ease}
 .timeline-labels span.active::before{background:#967651}
+
+/* Keep the track and its captions together, independent of button height. */
+.transport{grid-template-rows:18px 22px;row-gap:2px;align-items:center;padding-top:14px;padding-bottom:12px}
+.transport #play,.transport #restart,.transport #clock{grid-row:1 / 3}
+.transport #play{grid-column:1}.transport #restart{grid-column:2}.transport #clock{grid-column:4}
+.transport #seek{grid-column:3;grid-row:1;background:linear-gradient(to right,#ddd6cb 0%,#ddd6cb var(--stage-start,0%),#967651 var(--stage-start,0%),#967651 var(--stage-end,10.638%),#ddd6cb var(--stage-end,10.638%),#ddd6cb 100%);height:4px}
+.timeline-labels{grid-column:3;grid-row:2;height:22px;align-self:start;line-height:22px}
+.timeline-labels span::before{display:none}
+.timeline-labels span.active{color:#755333;font-weight:600}
